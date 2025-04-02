@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comandos da Wallstreet (Usar no F8)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: black;
@@ -49,9 +50,9 @@
         }
 
         footer {
-            margin-top: 30px;
+            margin-top: 50px;
             font-size: 0.8em;
-            font-style: italic;
+            text-align: center;
         }
 
         .label {
@@ -60,6 +61,31 @@
 
         .value {
             font-weight: normal;
+        }
+
+        /* Novo CSS para o botão "Voltar ao Início" */
+        .back-to-top {
+            margin-top: 30px; /* Espaço após o botão */
+        }
+
+        .back-btn {
+            background-color: #FF9900;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 16px;
+            text-align: center;
+            display: inline-block;
+            transition: background-color 0.3s;
+            font-family: 'Inter', sans-serif; /* Fonte Inter Bold */
+            font-weight: bold;
+            /* Remover itálico */
+            font-style: normal;
+        }
+
+        .back-btn:hover {
+            background-color: #e68a00;
         }
     </style>
 </head>
@@ -112,43 +138,42 @@
         <p class="command"><span class="label">BAN:</span> <span class="value">(Aplica BAN no player)</span></p>
         <p class="command"><span class="label">KICK:</span> <span class="value">(Aplica KICK no player)</span></p>
 
-       <div class="section-title">Bind Úteis Wallstreet</div>
-    <p class="command">
-    <span class="label">Bind de wall:</span> 
-    <span class="value">bind keyboard "numpad9" "wall"</span>  
-    <button class="copy-btn" onclick="copyText('bind keyboard &quot;numpad9&quot; &quot;wall&quot;')">Copiar</button>
-</p>
+        <div class="section-title">Bind Úteis Wallstreet</div>
+        <p class="command">
+            <span class="label">Bind de wall:</span> 
+            <span class="value">bind keyboard "numpad9" "wall"</span>  
+            <button class="copy-btn" onclick="copyText('bind keyboard &quot;numpad9&quot; &quot;wall&quot;')">Copiar</button>
+        </p>
 
-<p class="command">
-    <span class="label">Bind de NC:</span> 
-    <span class="value">bind keyboard "numpad7" "nc"</span>  
-    <button class="copy-btn" onclick="copyText('bind keyboard &quot;numpad7&quot; &quot;nc&quot;')">Copiar</button>
-</p>
+        <p class="command">
+            <span class="label">Bind de NC:</span> 
+            <span class="value">bind keyboard "numpad7" "nc"</span>  
+            <button class="copy-btn" onclick="copyText('bind keyboard &quot;numpad7&quot; &quot;nc&quot;')">Copiar</button>
+        </p>
 
-<p class="command">
-    <span class="label">Bind de estou ocupado(a):</span> 
-    <span class="value">bind keyboard "o" "me Calma ai, só um minuto, já falo ^~^</span>  
-    <button class="copy-btn" onclick="copyText('bind keyboard &quot;o&quot &quot;me Calma ai, só um minuto, já falo ^~^')">Copiar</button>
-</p>
+        <p class="command">
+            <span class="label">Bind de estou ocupado(a):</span> 
+            <span class="value">bind keyboard "o" "me Calma ai, só um minuto, já falo ^~^</span>  
+            <button class="copy-btn" onclick="copyText('bind keyboard &quot;o&quot &quot;me Calma ai, só um minuto, já falo ^~^')">Copiar</button>
+        </p>
 
-<p class="command">
-    <span class="label">Bind de carro 4 portas:</span> 
-    <span class="value">bind keyboard "i" car bjorn</span> 
-    <button class="copy-btn" onclick="copyText('bind keyboard &quot;i&quot; &quot;car bjorn&quot;')">Copiar</button>
-</p>
+        <p class="command">
+            <span class="label">Bind de carro 4 portas:</span> 
+            <span class="value">bind keyboard "i" car bjorn</span> 
+            <button class="copy-btn" onclick="copyText('bind keyboard &quot;i&quot; &quot;car bjorn&quot;')">Copiar</button>
+        </p>
 
-<p class="command">
-    <span class="label">Bind de carro 2 portas:</span> 
-    <span class="value">bind keyboard "9" car s2enn</span> 
-    <button class="copy-btn" onclick="copyText('bind keyboard &quot;9&quot; &quot;car s2enn&quot;')">Copiar</button>
-</p>
+        <p class="command">
+            <span class="label">Bind de carro 2 portas:</span> 
+            <span class="value">bind keyboard "9" car s2enn</span> 
+            <button class="copy-btn" onclick="copyText('bind keyboard &quot;9&quot; &quot;car s2enn&quot;')">Copiar</button>
+        </p>
 
-<p class="command">
-    <span class="label">Remover Binds:</span> 
-    <span class="value">unbind keyboard "letra"</span> 
-    <button class="copy-btn" onclick="copyText('unbind keyboard &quot;letra&quot;')">Copiar</button>
-</p>
-
+        <p class="command">
+            <span class="label">Remover Binds:</span> 
+            <span class="value">unbind keyboard "letra"</span> 
+            <button class="copy-btn" onclick="copyText('unbind keyboard &quot;letra&quot;')">Copiar</button>
+        </p>
 
         <div class="section-title">Comandos de Spawn de carros</div>
         <p class="command">Lista completa de carros está no servidor equipe retenção na aba spawn</p>
@@ -163,7 +188,11 @@
     </div>
 
     <footer>
-        Todos direitos reservados BladeHT #S3LO - 2025
+        <div class="back-to-top">
+            <!-- Link para onde o botão vai levar -->
+            <a href="https://wallstreak.carrd.co/" class="back-btn">Voltar ao Início</a>
+        </div>
+        <div style="margin-top: 20px;">Todos direitos reservados BladeHT #S3LO - 2025</div>
     </footer>
 
     <script>
