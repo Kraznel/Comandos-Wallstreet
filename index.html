@@ -2,146 +2,209 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comandos da Wallstreet (Usar no F8)</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: black;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos da Wallstreet (Usar no F8)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
 
-    .container {
-      max-width: 600px;
-      width: 100%;
-    }
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
 
-    h1 {
-      background-color: darkorange;
-      padding: 10px;
-      text-align: center;
-    }
+        h1 {
+            background-color: darkorange;
+            padding: 10px;
+            text-align: center;
+        }
 
-    .section-title {
-      background-color: #b35400;
-      padding: 5px;
-      font-size: 1.2em;
-      margin-top: 20px;
-    }
+        .section-title {
+            background-color: #b35400;
+            padding: 5px;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
 
-    .command {
-      margin: 5px 0;
-    }
+        .command {
+            margin: 5px 0;
+        }
 
-    .copy-btn, .link-btn {
-      background-color: #d3d3d3;
-      color: black;
-      border: none;
-      padding: 5px 10px;
-      cursor: pointer;
-      margin-left: 5px;
-      text-decoration: none;
-      display: inline-block;
-    }
+        .copy-btn {
+            background-color: #d3d3d3;
+            color: black;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
 
-    footer {
-      margin-top: 50px;
-      font-size: 0.8em;
-      text-align: center;
-    }
+        footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+            text-align: center;
+        }
 
-    .label {
-      font-weight: bold;
-    }
+        .label {
+            font-weight: bold;
+        }
 
-    .value {
-      font-weight: normal;
-    }
+        .value {
+            font-weight: normal;
+        }
 
-    .back-to-top {
-      margin-top: 30px;
-    }
+        .back-to-top {
+            margin-top: 30px;
+        }
 
-    .back-btn {
-      background-color: #FF9900;
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 25px;
-      font-size: 16px;
-      text-align: center;
-      display: inline-block;
-      transition: background-color 0.3s;
-      font-family: 'Inter', sans-serif;
-      font-weight: bold;
-      font-style: normal;
-    }
+        .back-btn {
+            background-color: #FF9900;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 16px;
+            text-align: center;
+            display: inline-block;
+            transition: background-color 0.3s;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            font-style: normal;
+        }
 
-    .back-btn:hover {
-      background-color: #e68a00;
-    }
-  </style>
+        .back-btn:hover {
+            background-color: #e68a00;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Comandos da Wallstreet</h1>
+    <div class="container">
+        <h1>Comandos da Wallstreet</h1>
 
-    <div class="section-title">Testes e membros CNX</div>
-    <p class="command"><span class="label">NC:</span> <span class="value">Ficar invisível...</span></p>
-    <p class="command"><span class="label">WALL:</span> <span class="value">Parede de identificação de players</span></p>
-    <p class="command"><span class="label">FIX:</span> <span class="value">Conserto de veículos</span></p>
-    <p class="command"><span class="label">DV:</span> <span class="value">Apagar um veículo</span></p>
-    <p class="command"><span class="label">TPTO + ID:</span> <span class="value">Se teletransportar até alguém</span></p>
-    <p class="command"><span class="label">TPTOME + ID:</span> <span class="value">Jogador vai teletransportar até você</span></p>
-    <p class="command"><span class="label">GOD:</span> <span class="value">Reviver</span></p>
-    <p class="command"><span class="label">GOD + ID:</span> <span class="value">Reviver a pessoa</span></p>
-    <p class="command"><span class="label">GOD + ID + P:</span> <span class="value">Reviver a pessoa e mandar Pier Sul</span></p>
-    <p class="command"><span class="label">GOD + ID + PN:</span> <span class="value">Reviver a pessoa e mandar Pier Norte</span></p>
-    <p class="command"><span class="label">UGROUPS:</span> <span class="value">(Olhar todos os groups do player)</span></p>
+        <div class="section-title">Testes e membros CNX</div>
+        <p class="command"><span class="label">NC:</span> <span class="value">Ficar invisível...</span></p>
+        <p class="command"><span class="label">WALL:</span> <span class="value">Parede de identificação de players</span></p>
+        <p class="command"><span class="label">FIX:</span> <span class="value">Conserto de veículos</span></p>
+        <p class="command"><span class="label">DV:</span> <span class="value">Apagar um veículo</span></p>
+        <p class="command"><span class="label">TPTO + ID:</span> <span class="value">Se teletransportar até alguém</span></p>
+        <p class="command"><span class="label">TPTOME + ID:</span> <span class="value">Jogador vai teletransportar até você</span></p>
+        <p class="command"><span class="label">GOD:</span> <span class="value">Reviver</span></p>
+        <p class="command"><span class="label">GOD + ID:</span> <span class="value">Reviver a pessoa</span></p>
+        <p class="command"><span class="label">GOD + ID + P:</span> <span class="value">Reviver a pessoa e mandar Pier Sul</span></p>
+        <p class="command"><span class="label">GOD + ID + PN:</span> <span class="value">Reviver a pessoa e mandar Pier Norte</span></p>
+        <p class="command"><span class="label">UGROUPS:</span> <span class="value">(Olhar todos os groups do player)</span></p>
 
-    <div class="section-title">Sub. Líderes CNX</div>
-    <p class="command"><span class="label">NC:</span> <span class="value">Ficar invisível...</span></p>
-    <p class="command"><span class="label">WALL:</span> <span class="value">Parede de identificação de players</span></p>
-    <p class="command"><span class="label">FIX:</span> <span class="value">Conserto de veículos</span></p>
-    <p class="command"><span class="label">DV:</span> <span class="value">Apagar um veículo</span></p>
-    <p class="command"><span class="label">TPTO + ID:</span> <span class="value">Se teletransportar até alguém</span></p>
-    <p class="command"><span class="label">TPTOME + ID:</span> <span class="value">Jogador vai teletransportar até você</span></p>
-    <p class="command"><span class="label">GOD:</span> <span class="value">Reviver</span></p>
-    <p class="command"><span class="label">GOD + ID:</span> <span class="value">Reviver a pessoa</span></p>
-    <p class="command"><span class="label">GOD + ID + P:</span> <span class="value">Reviver a pessoa e mandar Pier Sul</span></p>
-    <p class="command"><span class="label">GOD + ID + PN:</span> <span class="value">Reviver a pessoa e mandar Pier Norte</span></p>
-    <p class="command"><span class="label">VEHEDIT:</span> <span class="value">Tunar carro</span></p>
-    <p class="command"><span class="label">UGROUPS:</span> <span class="value">(Olhar todos os groups do player)</span></p>
+        <div class="section-title">Sub. Líderes CNX</div>
+        <p class="command"><span class="label">NC:</span> <span class="value">Ficar invisível...</span></p>
+        <p class="command"><span class="label">WALL:</span> <span class="value">Parede de identificação de players</span></p>
+        <p class="command"><span class="label">FIX:</span> <span class="value">Conserto de veículos</span></p>
+        <p class="command"><span class="label">DV:</span> <span class="value">Apagar um veículo</span></p>
+        <p class="command"><span class="label">TPTO + ID:</span> <span class="value">Se teletransportar até alguém</span></p>
+        <p class="command"><span class="label">TPTOME + ID:</span> <span class="value">Jogador vai teletransportar até você</span></p>
+        <p class="command"><span class="label">GOD:</span> <span class="value">Reviver</span></p>
+        <p class="command"><span class="label">GOD + ID:</span> <span class="value">Reviver a pessoa</span></p>
+        <p class="command"><span class="label">GOD + ID + P:</span> <span class="value">Reviver a pessoa e mandar Pier Sul</span></p>
+        <p class="command"><span class="label">GOD + ID + PN:</span> <span class="value">Reviver a pessoa e mandar Pier Norte</span></p>
+        <p class="command"><span class="label">VEHEDIT:</span> <span class="value">Tunar carro</span></p>
+        <p class="command"><span class="label">UGROUPS:</span> <span class="value">(Olhar todos os groups do player)</span></p>
 
-    <div class="section-title">Líderes CNX</div>
-    <p class="command"><span class="label">NC:</span> <span class="value">Ficar invisível...</span></p>
-    <p class="command"><span class="label">WALL:</span> <span class="value">Parede de identificação de players</span></p>
-    <p class="command"><span class="label">FIX:</span> <span class="value">Conserto de veículos</span></p>
-    <p class="command"><span class="label">DV:</span> <span class="value">Apagar um veículo</span></p>
-    <p class="command"><span class="label">TPTO + ID:</span> <span class="value">Se teletransportar até alguém</span></p>
-    <p class="command"><span class="label">TPTOME + ID:</span> <span class="value">Jogador vai teletransportar até você</span></p>
-    <p class="command"><span class="label">GOD:</span> <span class="value">Reviver</span></p>
-    <p class="command"><span class="label">GOD + ID:</span> <span class="value">Reviver a pessoa</span></p>
+        <div class="section-title">Líderes CNX</div>
+        <p class="command"><span class="label">NC:</span> <span class="value">Ficar invisível...</span></p>
+        <p class="command"><span class="label">WALL:</span> <span class="value">Parede de identificação de players</span></p>
+        <p class="command"><span class="label">FIX:</span> <span class="value">Conserto de veículos</span></p>
+        <p class="command"><span class="label">DV:</span> <span class="value">Apagar um veículo</span></p>
+        <p class="command"><span class="label">TPTO + ID:</span> <span class="value">Se teletransportar até alguém</span></p>
+        <p class="command"><span class="label">TPTOME + ID:</span> <span class="value">Jogador vai teletransportar até você</span></p>
+        <p class="command"><span class="label">GOD:</span> <span class="value">Reviver</span></p>
+        <p class="command"><span class="label">GOD + ID:</span> <span class="value">Reviver a pessoa</span></p>
+        <p class="command"><span class="label">GOD + ID + P:</span> <span class="value">Reviver a pessoa e mandar Pier Sul</span></p>
+        <p class="command"><span class="label">GOD + ID + PN:</span> <span class="value">Reviver a pessoa e mandar Pier Norte</span></p>
+        <p class="command"><span class="label">VEHEDIT:</span> <span class="value">Tunar carro</span></p>
+        <p class="command"><span class="label">UGROUPS:</span> <span class="value">(Olhar todos os groups do player)</span></p>
+        <p class="command"><span class="label">ADV:</span> <span class="value">(Aplicar ADV no player)</span></p>
+        <p class="command"><span class="label">BAN:</span> <span class="value">(Aplica BAN no player)</span></p>
+        <p class="command"><span class="label">KICK:</span> <span class="value">(Aplica KICK no player)</span></p>
 
-    <div class="section-title">Gravador de tela:</div>
-    <p class="command"><span class="label"><b>Medal</b></span> 
-      <a href="https://medal.tv/pt" target="_blank" class="link-btn">Acessar o site oficial</a>
-    </p>
+        <div class="section-title">Bind Úteis Wallstreet</div>
+        <p class="command">
+            <span class="label">Bind de wall:</span> 
+            <span class="value">bind keyboard "numpad9" "wall"</span>  
+            <button class="copy-btn" onclick="copyText('bind keyboard &quot;numpad9&quot; &quot;wall&quot;')">Copiar</button>
+        </p>
 
-    <div class="back-to-top">
-      <a href="#top" class="back-btn">Voltar ao Topo</a>
+        <p class="command">
+            <span class="label">Bind de NC:</span> 
+            <span class="value">bind keyboard "numpad7" "nc"</span>  
+            <button class="copy-btn" onclick="copyText('bind keyboard &quot;numpad7&quot; &quot;nc&quot;')">Copiar</button>
+        </p>
+
+        <p class="command">
+            <span class="label">Bind de estou ocupado(a):</span> 
+            <span class="value">bind keyboard "o" "me Calma ai, só um minuto, já falo ^~^</span>  
+            <button class="copy-btn" onclick="copyText('bind keyboard &quot;o&quot &quot;me Calma ai, só um minuto, já falo ^~^')">Copiar</button>
+        </p>
+
+        <p class="command">
+            <span class="label">Bind de carro 4 portas:</span> 
+            <span class="value">bind keyboard "i" car bjorn</span> 
+            <button class="copy-btn" onclick="copyText('bind keyboard &quot;i&quot; &quot;car bjorn&quot;')">Copiar</button>
+        </p>
+
+        <p class="command">
+            <span class="label">Bind de carro 2 portas:</span> 
+            <span class="value">bind keyboard "9" car s2enn</span> 
+            <button class="copy-btn" onclick="copyText('bind keyboard &quot;9&quot; &quot;car s2enn&quot;')">Copiar</button>
+        </p>
+
+        <p class="command">
+            <span class="label">Remover Binds:</span> 
+            <span class="value">unbind keyboard "letra"</span> 
+            <button class="copy-btn" onclick="copyText('unbind keyboard &quot;letra&quot;')">Copiar</button>
+        </p>
+
+        <div class="section-title">Comandos de Spawn de carros</div>
+        <p class="command">Lista completa de carros está no servidor da pasta da equipe que você esta, na aba spawn do servidor</p>
+        <p class="command"><span class="label">Carro 2 portas:</span> <span class="value">car s2enn</span> <button class="copy-btn"
+                onclick="copyText('car s2enn')">Copiar</button></p>
+        <p class="command"><span class="label">Carro 4 portas:</span> <span class="value">car bjorn</span> <button class="copy-btn"
+                onclick="copyText('car bjorn')">Copiar</button></p>
+        <p class="command"><span class="label">Tunar o carro:</span> <span class="value">tuning</span> <button class="copy-btn"
+                onclick="copyText('tuning')">Copiar</button></p>
+        <p class="command"><span class="label">Modificar o carro:</span> <span class="value">vehedit</span> <button class="copy-btn"
+                onclick="copyText('vehedit')">Copiar</button></p>
+
+        <div class="section-title">Gravador de tela</div>
+        <p class="command">
+            <span class="label">Medal:</span>
+            <a href="https://medal.tv/pt" target="_blank" class="back-btn" style="margin-left: 10px;">Acessar o site oficial</a>
+        </p>
     </div>
 
-  </div>
+    <footer>
+        <div class="back-to-top">
+            <a href="https://wallstreak.carrd.co/" class="back-btn">Voltar ao Início</a>
+        </div>
+        <div style="margin-top: 20px;">Todos direitos reservados BladeHT #S3LO - 2025</div>
+    </footer>
 
+    <script>
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Texto copiado: " + text);
+            });
+        }
+    </script>
 </body>
 
 </html>
